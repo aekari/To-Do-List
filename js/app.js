@@ -9,10 +9,9 @@ function addToDo(event){
 		return false;
 	}
 
-	toDoList.innerHTML += '<li>' + userInput.value + '</li>'
+	toDoList.innerHTML = '<li>' + userInput.value + '</li>' + toDoList.innerHTML;
 
 	userInput.value = '';
-
 }
 
-userSubmit.addEventListener('click', addToDo, false);
+userSubmit.addEventListener('click', addToDo, false)
