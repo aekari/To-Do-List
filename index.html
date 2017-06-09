@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel= "stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/stylesheet.css" type="text/css">
 		<title>JS EXERCISE 2</title>
 	</head>
@@ -13,13 +14,17 @@
 		</div>
 		<div class= "main-container flexing">
 			<form class="col2-1">
-				<label for="user-input">What do you need to do?</label>
-				<input type="text" name="user-input" id="user-input" placeholder="I need to...">
-				<button type="submit" id= "user-submit">+</button>
+				<label for="user-input" class= "labelheader">What do you need to do?</label>
+				<br>
+				<br>
+				<input type="text" name="user-input" id="user-input" placeholder="I need to..." autocomplete="off">
+				<button type="submit" id= "user-submit"><i class="fa fa-plus" aria-hidden="true"></i></button>
 			</form>
 
 			<div class= "col2-1">
 				<h3 class="tasksheader">Tasks:</h3>
+				<br>
+				<br>
 				<ul id="to-do-list" class="out-put">
 				</ul>
 			</div>
