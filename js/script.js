@@ -1,3 +1,6 @@
+// Below code demonstrates different ways to handle variables logically with explanations
+
+
 // this creates the global variable x and assigns it the number value of 5
 // var x = 5;
 // console.log(5);
@@ -37,15 +40,15 @@
 // console.log(b);
 //17 divided by 2 is 16, with a remainder of 1 so it should return a value of 1 in the console
 
-function evenOrOdd(num){
-	var tester = num % 2;
-	if(tester === 0){
-			console.log("The value passed is even");
-		} else if (tester === 1) {
-			console.log("The value passed is odd");
-		} else {
-			console.log ("Hey there! Please provie a number for this function!");
+function evenOrOdd(num){		// this function will check if a number is odd or even by doing the following:
+	var tester = num % 2;		//  the integer passed through the parameter of the evenOrOdd function will be divided by 2 and be assigned to the tester variable 
+	if(tester === 0){			// if tester is strictly equal to 0 (meaning it has no remainder),
+			console.log("The value passed is even"); // print to the console that the value passed is even
+		} else if (tester === 1) {	// otherwise, if the tester is has a remainder, 
+			console.log("The value passed is odd"); // print to the console the value passed is odd
+		} else { // otherwise,
+			console.log ("Hey there! Please provide a number for this function!"); // print to the console that the user needs to provide a number for this function
 		}
 	}
 
-evenOrOdd(10.005);
+evenOrOdd(10.005); // here we called the function and passed through a float.
